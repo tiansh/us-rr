@@ -3,14 +3,14 @@
 // @description    人人网计时器
 // @namespace      http://userscripts.org/scripts/show/124275
 // @copyright      cc-by-sa 3.0 / GNU GPL 3
-// @version        4.0.0
+// @version        4.1.0
 // @include        *://*.renren.com/*
 // @exclude        *://*.renren.com/*ajaxproxy.htm*
 // @exclude        *://*.renren.com/*wtalk/ime.htm*
 // @exclude        *://*.renren.com/SysHome.do*
 // @author         田生
-// @updateURL      http://userscripts.org/scripts/source/124275.meta.js
-// @downloadURL    http://userscripts.org/scripts/source/124275.user.js
+// @updateURL      http://tiansh.github.io/us-rr/xiaonei_timer/xiaonei_timer.meta.js
+// @downloadURL    http://tiansh.github.io/us-rr/xiaonei_timer/xiaonei_timer.user.js
 // @grant          GM_getValue
 // @grant          GM_setValue
 // ==/UserScript==

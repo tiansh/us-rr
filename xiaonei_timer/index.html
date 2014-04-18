@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>XiaoNei Timer - 人人网计时器</title>
+  <meta name="description" content="在人人网( renren.com )顶部显示一个计时器，显示当天已经在人人网上活动了多长时间。鼠标移至其上时会显示累计信息。" />
+  <meta name="keywords" content="人人网, xiaonei, 时间" />
+  <style>
+    html, body { font-family: "Microsoft YaHei",Helvetica,Arial,sans-serif; font-size: 16px; font-weight: normal; line-height: 24px; margin: 0; padding: 0; } 
+    h1, h2, h3, p { margin: 0; padding: 0; }
+    h1, #main, #header { width: 970px; margin: 0 auto; }
+    #title { background: #3e5b85; height: 150px; width: 100%; }
+    h1 { color: #fff; padding: 50px 0 40px; font-size: 48px; line-height: 60px; }
+    header { background: #444; color: #fff; padding: 40px; height: 300px; }
+    h2 { font-size: 40px; line-height: 50px; color: #fff; font-weight: bold; }
+    #desc { width: 460px; float: right; margin: 30px 0; line-height: 40px; font-size: 30px; text-align: right; color: #aaa; }
+    #desc h2 { margin: 40px 0 0; }
+    #buttons { float: left; width: 400px; height: 210px; margin: 30px 0; }
+    #buttons h2 { margin: 0 0 40px; }
+    #download { font-weight: bold; display: block; background: linear-gradient(to bottom, #61aa52, #578b48); float: left; width: 100%; height: 60px; line-height: 60px; color: white; text-align: center; font-size: 30px; text-decoration: none; border-radius: 8px; box-shadow: 1px 1px 1px #a3e17e inset, -1px -1px 1px #426636 inset; border: 1px red #588e49; margin: 20px 0 0; padding: 5px; transition: all linear 0.05s; }
+    #download:hover { background: linear-gradient(to bottom, #73c462, #578b48); }
+    #download:active { background: linear-gradient(to bottom, #477c3c, #578b48); box-shadow: -1px -1px 1px #5da14e inset, 1px 1px 1px #426636 inset; padding: 7px 3px 3px 7px; color: #eee; }
+    #feedback { color: #aaa; float: right; text-decoration: none; }
+    body { background: #e9edf0; font-size: 22px; line-height: 30px; }
+    #main { padding: 40px 0 80px 0; }
+    h3 { font-size: 35px; line-height: 40px; margin: 40px 0 20px; }
+    .in { margin: 0 0 0 2em; }
+  </style>
+</head>
+<body>
+  <div id="title">
+    <h1>XiaoNei Timer</h1>
+  </div>
+  <header>
+    <div id="header">
+      <div id="buttons">
+        <h2>人人网计时器</h2>
+        <a id="download" href="xiaonei_timer.user.js">安装脚本</a>
+        <a id="feedback" target="_blank" href="https://github.com/tiansh/us-rr/issues">错误反馈</a>
+      </div>
+      <div id="desc">
+        <div>
+          在人人网顶部显示一个计时器<br />
+          包括当日活动时间和累计时间<br />
+          支持v6界面、v7界面和3g界面
+        </div>
+        <h2>珍爱生命，远离SNS</h2>
+      </div>
+    </div>
+  </header>
+  <div id="main">
+    <h3>脚本功能</h3>
+    <div class="in">
+      <p>
+        脚本会记录人人网页面被用户打开的时间。并将时间显示在页面上<br />
+        只有人人网的页面是浏览器显示的当前页面，且浏览器为当前系统中活动的窗口时才会记录时间。
+      </p>
+      <p>v6界面，当日活动时间会显示在导航栏，鼠标指向时会显示累计的时间。</p>
+      <p>v7界面，当日活动时间和累计活动时间会显示在侧栏（只支持首页）。</p>
+    </div>
+    <h3>脚本权限和用户隐私</h3>
+    <div class="in">
+      脚本使用了getValue，setValue用于存储计时器记录的时间。<br />
+      getValue和setValue所存储的数据可以被脚本自己和其他有权限访问存储该数据的文件的用户所读写。<br />
+      脚本不会进行网络访问，也不会记录其他数据。
+    </div>
+    <h3>已知支持的浏览器</h3>
+    <div class="in">
+      <ul>
+        <li>Firefox + GreaseMonkey</li>
+        <li>Chrome + Tampermonkey</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
