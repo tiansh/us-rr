@@ -2,7 +2,7 @@
 // @name           XiaoNei Timer
 // @description    人人网计时器
 // @namespace      http://userscripts.org/scripts/show/124275
-// @copyright      cc-by-sa 3.0 / GNU GPL 3
+// @copyright      CC BY-SA 3.0 / GNU GPL 3
 // @version        4.1.0
 // @include        *://*.renren.com/*
 // @exclude        *://*.renren.com/*ajaxproxy.htm*
