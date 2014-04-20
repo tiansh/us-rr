@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Xiaonei Auto Return Visits - 人人网自动回访</title>
+  <meta name="description" content="自动获取人人网最近来访的名单，并自动回访距离上次回访超过一天的人" />
+  <meta name="keywords" content="人人网, xiaonei, 来访, 回访" />
+  <style>
+    html, body { font-family: "Microsoft YaHei",Helvetica,Arial,sans-serif; font-size: 16px; font-weight: normal; line-height: 24px; margin: 0; padding: 0; } 
+    h1, h2, h3, p { margin: 0; padding: 0; }
+    h1, #main, #header { width: 970px; margin: 0 auto; }
+    #title { background: #3e5b85; height: 150px; width: 100%; }
+    h1 { color: #fff; padding: 50px 0 40px; font-size: 48px; line-height: 60px; }
+    header { background: #444; color: #fff; padding: 40px; height: 300px; }
+    h2 { font-size: 40px; line-height: 50px; color: #fff; font-weight: bold; }
+    #desc { width: 520px; float: right; margin: 30px 0; line-height: 40px; font-size: 30px; text-align: right; color: #aaa; }
+    #desc h2 { margin: 40px 0 0; }
+    #buttons { float: left; width: 400px; height: 210px; margin: 30px 0; }
+    #buttons h2 { margin: 0 0 40px; }
+    #download { font-weight: bold; display: block; background: linear-gradient(to bottom, #61aa52, #578b48); float: left; width: 100%; height: 60px; line-height: 60px; color: white; text-align: center; font-size: 30px; text-decoration: none; border-radius: 8px; box-shadow: 1px 1px 1px #a3e17e inset, -1px -1px 1px #426636 inset; border: 1px red #588e49; margin: 20px 0 0; padding: 4px 6px 6px 4px; transition: all linear 0.05s; text-shadow: 0 0 2px #555; }
+    #download:hover { background: linear-gradient(to bottom, #73c462, #578b48); }
+    #download:active { background: linear-gradient(to bottom, #477c3c, #578b48); box-shadow: -1px -1px 1px #5da14e inset, 1px 1px 1px #426636 inset; padding: 6px 4px 4px 6px; color: #eee; }
+    #feedback { color: #aaa; float: right; text-decoration: none; }
+    body { background: #e9edf0; font-size: 22px; line-height: 30px; }
+    #main { padding: 40px 0 80px 0; }
+    h3 { font-size: 35px; line-height: 40px; margin: 40px 0 20px; }
+    .in { margin: 0 0 0 2em; }
+  </style>
+</head>
+<body>
+  <div id="title">
+    <h1>Xiaonei Auto Return Visits</h1>
+  </div>
+  <header>
+    <div id="header">
+      <div id="buttons">
+        <h2>人人网自动回访</h2>
+        <a id="download" href="xiaonei_auto_return_visits.user.js">安装脚本</a>
+        <a id="feedback" target="_blank" href="https://github.com/tiansh/us-rr/issues">错误反馈</a>
+      </div>
+      <div id="desc">
+        <div>
+          觉得有来访就要回却不想手动点？<br />
+          脚本可以自动回访最近来访的用户<br />
+          支持v6界面、v7界面和3g界面
+        </div>
+        <h2><s>不觉得刷人气很无聊吗！</s></h2>
+      </div>
+    </div>
+  </header>
+  <div id="main">
+    <h3>脚本功能</h3>
+    <div class="in">
+      <p>人人网自动在后台访问最近来访中的用户，当前回访进度会显示在最近来访框的右上角。</p>
+      <p>本脚本适用于那些对那些回访有强迫症，如果不回访会坐立不安，但是又压根不想看别人状态的人。</p>
+      <p>程序会对方在近三天来访过，且距离上次该脚本访问该用户的时间超过一天的情况下，自动访问对应用户。</p>
+    </div>
+    <h3>使用</h3>
+    <div class="in">
+    <p>访问首页后其他均由脚本自动完成。</p>
+    <p>第一次使用或长期不使用后第一次使用可能需要很长的时间，如果您关闭了该页面下一次访问会接着这次访问到的最后一个人继续重新访问。</p>
+    <p>脚本只有在您打开人人首页之后才会运行和进行回访，不可能在您完全不登录人人网的情况下做任何事情。所以不要指望浏览器里面装完这个插件就能连人人网都不打开就自动地回访，最少也要登录一下嘛。</p>
+    </div>
+    <h3>脚本权限和用户隐私</h3>
+    <div class="in">
+      <p>脚本中不包含收集个人信息的内容</p>
+      <p>本脚本在本地保存的信息包括：您的人人网帐号编号，您好友的人人网帐号编号，您好友最后一次访问您的时间以及本脚本最后一次访问您对应好友的时间。这些信息可以被任何可以使用本浏览器的用户以及任何可以在renren.com的域上运行的脚本所读取。本脚本未通过其他方式保存任何信息。</p>
+      <p>脚本会在页面加载好后自动拉取最近来访的记录，在需要回访的时候会在后台打开该用户的主页，脚本没有进行其他网络访问。</p>
+      <p>您如果需要临时禁用该功能请到“附加组件管理器”-“脚本管理”里面禁用该脚本。</p>
+    </div>
+    <h3>已知支持的浏览器</h3>
+    <div class="in">
+      <ul>
+        <li>Firefox + GreaseMonkey</li>
+        <li>Chrome + Tampermonkey</li>
+      </ul>
+    </div>
+    <h3>关于</h3>
+    <div class="in">
+      GNU GPL v3 / CC BY-SA 3.0
+    </div>
+  </div>
+</body>
+</html>
