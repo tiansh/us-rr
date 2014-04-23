@@ -9,8 +9,8 @@
 // @exclude        *://*.renren.com/*wtalk/ime.htm*
 // @exclude        *://*.renren.com/SysHome.do*
 // @author         田生
-// @updateURL      http://tiansh.github.io/us-rr/xiaonei_timer/xiaonei_timer.meta.js
-// @downloadURL    http://tiansh.github.io/us-rr/xiaonei_timer/xiaonei_timer.user.js
+// @updateURL      https://tiansh.github.io/us-rr/xiaonei_timer/xiaonei_timer.meta.js
+// @downloadURL    https://tiansh.github.io/us-rr/xiaonei_timer/xiaonei_timer.user.js
 // @grant          GM_getValue
 // @grant          GM_setValue
 // ==/UserScript==

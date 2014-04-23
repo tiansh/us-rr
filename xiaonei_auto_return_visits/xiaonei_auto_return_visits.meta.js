@@ -8,8 +8,8 @@
 // @exclude        http://*.renren.com/*ajaxproxy.htm*
 // @exclude        http://*.renren.com/*wtalk/ime.htm*
 // @exclude        http://*.renren.com/SysHome.do* 
-// @updateURL      http://tiansh.github.io/us-rr/xiaonei_auto_return_visits/xiaonei_auto_return_visits.meta.js
-// @downloadURL    http://tiansh.github.io/us-rr/xiaonei_auto_return_visits/xiaonei_auto_return_visits.user.js
+// @updateURL      https://tiansh.github.io/us-rr/xiaonei_auto_return_visits/xiaonei_auto_return_visits.meta.js
+// @downloadURL    https://tiansh.github.io/us-rr/xiaonei_auto_return_visits/xiaonei_auto_return_visits.user.js
 // @grant          GM_addStyle
 // @grant          GM_getValue
 // @grant          GM_setValue
